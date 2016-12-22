@@ -13,20 +13,19 @@ public class NucleotideTest {
         DNA dna = new DNA("");
         assertThat(dna.count('A'), is(0));
     }
-    //
-    // @Ignore
-    // @Test
-    // public void testEmptyDnaStringHasNoNucleotides() {
-    //     DNA dna = new DNA("");
-    //     Map<Character, Integer> counts = dna.nucleotideCounts();
-    //     assertThat(counts.size(), is(4));
-    //     assertThat(counts, allOf(
-    //             hasEntry('A', 0),
-    //             hasEntry('C', 0),
-    //             hasEntry('G', 0),
-    //             hasEntry('T', 0)
-    //     ));
-    // }
+
+    @Ignore
+    public void testEmptyDnaStringHasNoNucleotides() {
+        DNA dna = new DNA("");
+        Map<Character, Integer> counts = dna.nucleotideCounts();
+        assertThat(counts.size(), is(4));
+        assertThat(counts, allOf(
+                hasEntry('A', 0),
+                hasEntry('C', 0),
+                hasEntry('G', 0),
+                hasEntry('T', 0)
+        ));
+    }
     //
     // @Ignore
     // @Test
