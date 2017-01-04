@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="NucleotideTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-12-22T20:28:25" hostname="Karinas-MacBook-Pro.local" time="0.005">
+<testsuite name="NucleotideTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-01-04T20:01:11" hostname="Karinas-MacBook-Pro.local" time="0.006">
   <properties/>
-  <testcase name="testEmptyDnaStringHasNoAdenosine" classname="NucleotideTest" time="0.005"/>
+  <testcase name="testEmptyDnaStringHasNoAdenosine" classname="NucleotideTest" time="0.006"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
