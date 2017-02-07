@@ -7,7 +7,9 @@ var Bob = function() {};
 
 Bob.prototype.hey = function(input) {
   if (input.includes('!')) {
-    return 'Woah, chill out!';
+    return 'Whoa, chill out!';
+  } else if (input.includes('?')) {
+    return 'Sure.';
   } else {
     return 'Whatever.';
   }
