@@ -6,7 +6,7 @@
 var Bob = function() {};
 
 Bob.prototype.hey = function(input) {
-  if (input.includes('!')) {
+  if (input.includes('OUT') || input.includes('HELL')) {
     return 'Whoa, chill out!';
   } else if (input.includes('?')) {
     return 'Sure.';
