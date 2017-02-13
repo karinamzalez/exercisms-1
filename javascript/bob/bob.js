@@ -10,7 +10,10 @@ Bob.prototype.hey = function(input) {
     return 'Whoa, chill out!';
   } else if (input.slice(-1) == '?') {
     return 'Sure.';
-  } else {
+  } else if (!(/\S/.test(input))) {
+    return 'Fine. Be that way!';
+  }
+  else {
     return 'Whatever.';
   }
 };
