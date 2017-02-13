@@ -6,13 +6,21 @@
 var Bob = function() {};
 
 Bob.prototype.hey = function(input) {
-  if (input.includes('OUT') || input.includes('HELL')) {
+  if (isUpperCase(input)) {
     return 'Whoa, chill out!';
-  } else if (input.includes('?')) {
+  } else if (input.slice(-1) == '?') {
     return 'Sure.';
   } else {
     return 'Whatever.';
   }
 };
+
+function isUpperCase(input) {
+    if (/^[0-9, ?]*$/.test(input)) {
+      return false;
+    } else {
+      return input === input.toUpperCase();
+    }
+}
 
 module.exports = Bob;
