@@ -13,9 +13,8 @@ var Pangram = function(string) {
 
 Pangram.prototype.isPangram = function() {
   var pangram = true;
-  var sentence = this.sentence;
   var alphabet = this.alphabet;
-  parseSentence(sentence, alphabet);
+  parseSentence(this.sentence, alphabet);
   for (var key in alphabet) {
     if (alphabet[key] === false) {
       pangram = false;
