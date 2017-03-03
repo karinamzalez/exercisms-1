@@ -5,11 +5,7 @@ var Anagram = function(word) {
 Anagram.prototype.matches = function() {
   var potentialMatches = [];
   if (!(arguments[0] instanceof Array)) {
-    potentialMatches = [];
-    for (var i = 0; i < arguments.length; ++i) {
-      var word = arguments[i];
-      potentialMatches.push(word.toLowerCase());
-    }
+    potentialMatches = Array.from(arguments);
   } else {
     potentialMatches = arguments[0];
   }
