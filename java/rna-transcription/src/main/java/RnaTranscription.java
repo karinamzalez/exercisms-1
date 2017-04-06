@@ -1,27 +1,19 @@
-import java.util.Map;
-import java.util.HashMap;
-
 public class RnaTranscription {
-    private static final Map<String, String> translation = new HashMap<String, String>(){
-      {
-        put("C", "G");
-        put("G", "C");
-        put("T", "A");
-        put("A", "U");
-      };
-    };
-
-
-  public String ofDna(String dnaString) {
+  public static String ofDna(String dnaString) {
     String rna = "";
-    for (Map.Entry<String, String> entry : translation.entrySet()) {
-      String key = entry.getKey();
-      String value = entry.getValue();
-
-      if (key == dnaString) {
-        rna = value;
-      }
-    };
+    for (String nucleobase : dnaString.split("")) {
+      rna += translateNucleobase(nucleobase);
+    }
     return rna;
+  }
+
+  private static String translateNucleobase(String nucleobase) {
+    switch (nucleobase) {
+      case "C" : return "G";
+      case "G" : return "C";
+      case "T" : return "A";
+      case "A" : return "U";
+      default: return "";
+    }
   }
 }
