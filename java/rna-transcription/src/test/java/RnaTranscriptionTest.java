@@ -22,13 +22,11 @@ public class RnaTranscriptionTest {
         Assert.assertEquals("G", rnaTranscription.ofDna("C"));
     }
 
-    @Ignore
     @Test
     public void testRnaTranscriptionOfGuanineIsCytosine() {
         Assert.assertEquals("C", rnaTranscription.ofDna("G"));
     }
 
-    @Ignore
     @Test
     public void testRnaTranscriptionOfThymineIsAdenine() {
         Assert.assertEquals("A", rnaTranscription.ofDna("T"));
