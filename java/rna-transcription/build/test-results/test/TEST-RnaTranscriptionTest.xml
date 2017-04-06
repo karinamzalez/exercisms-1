@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RnaTranscriptionTest" tests="6" skipped="2" failures="0" errors="0" timestamp="2017-04-06T22:27:15" hostname="Karinas-MacBook-Pro.local" time="0.016">
+<testsuite name="RnaTranscriptionTest" tests="6" skipped="1" failures="0" errors="0" timestamp="2017-04-06T22:28:12" hostname="Karinas-MacBook-Pro.local" time="0.006">
   <properties/>
-  <testcase name="testRnaTranscriptionOfThymineIsAdenine" classname="RnaTranscriptionTest" time="0.002"/>
-  <testcase name="testRnaTranscription" classname="RnaTranscriptionTest" time="0.003">
+  <testcase name="testRnaTranscriptionOfThymineIsAdenine" classname="RnaTranscriptionTest" time="0.001"/>
+  <testcase name="testRnaTranscription" classname="RnaTranscriptionTest" time="0.0">
     <skipped/>
   </testcase>
-  <testcase name="testRnaTranscriptionOfCytosineIsGuanine" classname="RnaTranscriptionTest" time="0.001"/>
-  <testcase name="testRnaTranscriptionOfGuanineIsCytosine" classname="RnaTranscriptionTest" time="0.001"/>
+  <testcase name="testRnaTranscriptionOfCytosineIsGuanine" classname="RnaTranscriptionTest" time="0.0"/>
+  <testcase name="testRnaTranscriptionOfGuanineIsCytosine" classname="RnaTranscriptionTest" time="0.0"/>
   <testcase name="testRnaTranscriptionOfEmptyDnaIsEmptyRna" classname="RnaTranscriptionTest" time="0.0"/>
-  <testcase name="testRnaTranscriptionOfAdenineIsUracil" classname="RnaTranscriptionTest" time="0.0">
-    <skipped/>
-  </testcase>
+  <testcase name="testRnaTranscriptionOfAdenineIsUracil" classname="RnaTranscriptionTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
