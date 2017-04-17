@@ -4,6 +4,14 @@ var FoodChain = function() {
 };
 
 FoodChain.prototype.verses = function(first, second) {
+  var verses = [];
+  if (second == 8) {
+    for (var i = 1; i < this.verseAnimals.length; i++) {
+      verses.push(this.verse(i));
+    }
+    verses.push(this.verse(8));
+    return verses.join("\n") + "\n";
+  }
   return this.verse(first) + "\n" + this.verse(second) + "\n";
 };
 
