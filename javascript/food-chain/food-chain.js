@@ -4,6 +4,9 @@ var FoodChain = function() {
 };
 
 FoodChain.prototype.verse = function(amount) {
+  if (amount == 8) {
+    return "I know an old lady who swallowed a horse.\nShe\'s dead, of course!\n";
+  }
   var chain = [];
   for (var i = 0; i < amount; i++) {
     var animal = this.verseAnimals[i];
