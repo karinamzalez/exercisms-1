@@ -86,7 +86,7 @@ describe('Food Chain', function () {
     expect(song.verse(8)).toEqual(expected);
   });
 
-  xit('multiple verses', function () {
+  it('multiple verses', function () {
     var expected = '';
 
     expected += 'I know an old lady who swallowed a fly.\nI don\'t know why she swallowed the fly. Perhaps she\'ll die.\n\n';

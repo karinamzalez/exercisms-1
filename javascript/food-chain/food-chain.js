@@ -3,6 +3,10 @@ var FoodChain = function() {
                        'dog', 'goat', 'cow', 'horse'];
 };
 
+FoodChain.prototype.verses = function(first, second) {
+  return this.verse(first) + "\n" + this.verse(second) + "\n";
+};
+
 FoodChain.prototype.verse = function(amount) {
   if (amount == 8) {
     return "I know an old lady who swallowed a horse.\nShe\'s dead, of course!\n";
