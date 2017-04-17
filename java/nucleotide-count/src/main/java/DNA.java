@@ -5,11 +5,22 @@ public class DNA {
  String reqDNA = "ACGT";
 
   public DNA(String strand){
-    String dnaStrand = strand;
+    this.strand = strand;
   }
 
-  public int count(char nucleobase){
-    int count = 0;
+  public Integer count(char nucleobase){
+    Integer count = 0;
+
+    if (validNucleotides.indexOf(nucleobase) == -1) {
+      throw new IllegalArgumentException();
+    }
+
+    for (char c : strand.toCharArray()) {
+      if (c == nucleobase) {
+        count++;
+      }
+    }
+
     return count;
   if (reqDNA.indexOf(nucleobase) < 0) {
     throw new IllegalArgumentException();
