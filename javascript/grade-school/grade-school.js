@@ -3,6 +3,9 @@
 var School = function() {
   this.rosterHash = {};
   this.roster = () => {
+    for (var key in this.rosterHash) {
+      this.grade(key);
+    }
     return this.rosterHash;
   };
 };
@@ -13,6 +16,8 @@ School.prototype.add = function(student, grade) {
 };
 
 School.prototype.grade = function(grade) {
+  var students = this.rosterHash[grade];
+  return students ? students.sort() : [];
 };
 
 module.exports = School;
