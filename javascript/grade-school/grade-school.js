@@ -8,7 +8,11 @@ var School = function() {
 };
 
 School.prototype.add = function(student, grade) {
-  this.rosterHash[grade] = [student];
+  var hash = this.rosterHash;
+  hash[grade] ? hash[grade].push(student) : hash[grade] = [student];
+};
+
+School.prototype.grade = function(grade) {
 };
 
 module.exports = School;
