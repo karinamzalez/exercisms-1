@@ -26,7 +26,7 @@ describe('Robot', function() {
     expect(differentRobot.name).not.toEqual(robot.name);
   });
 
-  xit('is able to reset the name', function() {
+  it('is able to reset the name', function() {
     var originalName = robot.name;
     robot.reset();
     var newName = robot.name;
@@ -34,7 +34,7 @@ describe('Robot', function() {
     expect(originalName).not.toEqual(newName);
   });
 
-  xit('should set a unique name after reset', function() {
+  it('should set a unique name after reset', function() {
     var i,
         numResets = 10000,
         usedNames = {};
@@ -50,7 +50,7 @@ describe('Robot', function() {
   });
 
   //This test is optional.
-  xit('there can be lots of robots with different names each', function() {
+  it('there can be lots of robots with different names each', function() {
     var i,
         numRobots = 10000,
         usedNames = {};
