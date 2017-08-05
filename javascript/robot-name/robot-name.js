@@ -1,7 +1,9 @@
-var allNames = [];
 function Robot() {
   this.name = this.newName();
 }
+
+var allNames = [];
+
 Robot.prototype.newName = function () {
   let res = '';
   res += String.fromCharCode(Math.floor(Math.random() * (90 - 65) + 65));
@@ -21,4 +23,5 @@ Robot.prototype.newName = function () {
 Robot.prototype.reset = function() {
   this.name = this.newName();
 };
+
 module.exports = Robot;
