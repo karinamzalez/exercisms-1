@@ -43,3 +43,22 @@ class Cipher{
 
 
 module.exports = Cipher;
+
+
+class Palindrome() {
+  constructor(string){
+    this.string = string;
+    this.isPalindrome = true;
+  }
+
+  checkPalindrome() {
+    var reversedString = this.string.split("").reverse("").join("");
+    for (var i = 0; i < reversedString.length; i++) {
+      if (this.string[i] !== reversedString[i]) {
+        this.isPalindrome = false;
+        break;
+      }
+    }
+    return this.isPalindrome;
+  }
+}
