@@ -51,6 +51,9 @@ class Palindrome() {
     this.isPalindrome = true;
   }
 
+  _.zip(ap.split(''), pa.split(''))
+  _.map(arrays, function(characters){return characters[0] !== characters[1] ? false : true})
+
   checkPalindrome() {
     var reversedString = this.string.split("").reverse("").join("");
     for (var i = 0; i < reversedString.length; i++) {
