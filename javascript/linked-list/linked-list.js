@@ -10,6 +10,14 @@ class LinkedList {
   pop(link) {
     return this.list.pop();
   }
+
+  shift() {
+    return this.list.shift();
+  }
+
+  unshift() {
+    return this.list;
+  }
 }
 
 module.exports = LinkedList;

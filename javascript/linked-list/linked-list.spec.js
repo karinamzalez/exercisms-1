@@ -8,14 +8,14 @@ describe('LinkedList', function () {
     expect(list.pop()).toBe(20);
     expect(list.pop()).toBe(10);
   });
-  xit('push/shift', function () {
+  it('push/shift', function () {
     var list = new LinkedList();
     list.push(10);
     list.push(20);
     expect(list.shift()).toBe(10);
     expect(list.shift()).toBe(20);
   });
-  xit('unshift/shift', function () {
+  it('unshift/shift', function () {
     var list = new LinkedList();
     list.unshift(10);
     list.unshift(20);
