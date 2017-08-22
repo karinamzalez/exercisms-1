@@ -15,8 +15,17 @@ class LinkedList {
     return this.list.shift();
   }
 
-  unshift() {
-    return this.list;
+  unshift(link) {
+    return this.list.unshift(link);
+  }
+
+  count() {
+    return this.list.length;
+  }
+
+  delete(link) {
+    var linkIndex = this.list.indexOf(link);
+    return this.list.splice(linkIndex, 1);
   }
 }
 
